@@ -120,26 +120,26 @@ function avaliaVencedor() {
         if (result[i] === 'XXX') {
             mensagenDoResultado = `${playerOne} Venceu!`;
             pontosP1++;
-            setTimeout(()=> {
-                criarRedLine();
-            }, 500);
             
             return setTimeout(()=> {
-                telaFinal();
-            }, 1000);
+                criarRedLine();
+                setTimeout(()=> {
+                    telaFinal();
+                }, 1000);
+            }, 500);
             
         }
 
         if (result[i] === 'OOO') {
             mensagenDoResultado = `${playerTwo} Venceu!`;
             pontosP2++;
-            setTimeout(()=> {
-                criarRedLine();
-            }, 500);
-
+            
             return setTimeout(()=> {
-                telaFinal();
-            }, 1000)
+                criarRedLine();
+                setTimeout(()=> {
+                    telaFinal();
+                }, 1000);
+            }, 500);
         }
 
         if ((contaClick === 9) && (result[i] !== 'XXX' || result[i] !== 'OOO')) {
