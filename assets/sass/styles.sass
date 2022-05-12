@@ -1,0 +1,148 @@
+$font-color1: white
+
+*
+    padding: 0
+    margin: 0
+
+body
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: url(../imgs/samuraibg.jpg)
+
+.grande-caixa
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.by-enthony
+    color: $font-color1
+    margin-top: 1%
+    font-size: min(4vw, 16px)
+
+h1
+    color: $font-color1
+    font-size: min(5vw,32px)
+
+.tela
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    width: min(70vw, 500px)
+    height: min(70vw, 500px)
+    margin-top: 5px
+
+.game-start
+    width: min(70vw, 500px)
+    height: min(70vw, 500px)
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-evenly
+    box-shadow: 2px 2px 5px 5px  
+    .quadro
+        width: min(20vw,150px)
+        height: min(20vw,150px)
+        background-color: rgb(255, 217, 0, 0.5)
+        border-radius: 10px
+        display: grid
+        place-items: center
+        font-size: min(12vw,100px)
+        box-shadow: 1px 2px 5px 5px
+        &:hover
+            background-color: rgb(110, 106, 83, 0.5)
+            color: white
+            box-shadow: inherit
+
+.tela-input
+    position: absolute
+    width: min(66vw, 478px)
+    height: min(67vw, 485px)
+    background: linear-gradient(rgba(255, 217, 0.5), rgba(255, 255, 255, 0.5))
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: min(2vw,20px)
+    border-radius: 5px
+    z-index: 10
+
+    .input-player
+        width: min(70%,300px)
+        height: min(10%,45px)
+        font-size: min(3.5vw,32px)
+        text-align: center
+        border: none
+        border-bottom: 1px solid black
+        border-radius: 5px
+        background-color: inherit
+        box-shadow: -1px 2px 5px 1.2px
+
+    .label-input
+        font-size: min(5vw,32px)
+        margin-top: 20px
+
+    .button-iniciar
+        width: 25%
+        height: 10%
+        border-radius: 5px
+        font-size: min(3vw,23px)
+        border: none
+        background: linear-gradient(#66666680, rgba(255, 255, 255, 0.5))
+        margin-top: min(2vw,20px)
+        box-shadow: -1px 2px 5px 1px gray
+        &:hover
+            background-color: #ffffff80
+        &:focus
+            background-color: #ffffff80
+
+    .msg-result
+        display: block
+        text-align: center
+        width: auto
+        height: auto
+        padding: min(3vw,23px)
+        text-transform: uppercase
+        font-weight: bold
+        background: linear-gradient(#a3a3a380, rgba(255, 255, 255, 0.5))
+        font-size: min(5vw, 40px)
+        border-radius: 10px
+        box-shadow: 0px 0px 10px 2px black
+
+.mensagens
+    width: 80%
+    height: 40px
+    display: flex
+    justify-content: center
+    text-align: center
+    align-items: center
+    font-size: 16px
+    color: $font-color1
+
+.red-line
+    position: absolute
+    background-color: rgba(119, 119, 119, 0.8)
+    z-index: 1
+    border-radius: 10px
+    box-shadow: 1px 2px 5px 2px white
+    animation: build-line 1s
+
+@keyframes build-line
+    0%
+        width: 10%
+        height: min(2vw, 15px)
+
+    25%
+        width: 90%
+        height: min(2vw, 15px)
+
+    75%
+        width: 90%
+        height: min(2vw, 15px)
+
+    100%
+        width: 0%
+        height: min(2vw, 15px)

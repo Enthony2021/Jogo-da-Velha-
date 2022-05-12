@@ -1,0 +1,22 @@
+{
+  "name": "jogo-da-velha-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./assts/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enthony2021/Jogo-da-Velha-.git"
+  },
+  "author": "Enthony Stevie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enthony2021/Jogo-da-Velha-/issues"
+  },
+  "homepage": "https://github.com/Enthony2021/Jogo-da-Velha-#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}

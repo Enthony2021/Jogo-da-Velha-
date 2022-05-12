@@ -11,6 +11,20 @@ var pontosP2 = 0;
 var flagContinuar = false;
 var gameStart = document.querySelector('.game-start');
 var i;
+const chineseMusic = document.querySelector('.chineseMusic');
+const waterMusic = document.querySelector('.waterMusic');
+const swordMusic = document.querySelector('.swordMusic');
+
+function playBgMusic() {
+    document.addEventListener('click', ()=>{
+        chineseMusic.play();
+    });
+}
+playBgMusic();
+
+function sound(music) {
+    music.play();
+};
 
 
 function criaTelaInput(cb) {
@@ -24,14 +38,14 @@ function criaTelaInput(cb) {
     telaInput.classList.add('tela-input');
     tela.appendChild(telaInput);
 
-    labelOne.innerHTML = 'Jogador 1';
+    labelOne.innerHTML = 'P1';
     labelOne.classList.add('label-input');
     telaInput.appendChild(labelOne);
     inputOne.setAttribute('type', Text);
     inputOne.classList.add('input-player');
     telaInput.appendChild(inputOne);
 
-    labelTwo.innerHTML = 'Jogador 2';
+    labelTwo.innerHTML = 'P2';
     labelTwo.classList.add('label-input');
     telaInput.appendChild(labelTwo);
     inputTwo.setAttribute('type', Text);
@@ -88,6 +102,7 @@ function jogando() {
         mostraMensagem();
 
         if (quadroCliked.classList.contains('quadro') && !quadroCliked.innerHTML && mudaJogador === 1) {
+            sound(waterMusic);
             quadroCliked.innerHTML = 'X';
             contaClick++;
             if (contaClick > 4) avaliaVencedor();
@@ -96,6 +111,7 @@ function jogando() {
         }
 
         if (quadroCliked.classList.contains('quadro') && !quadroCliked.innerHTML && mudaJogador === 2) {
+            sound(waterMusic);
             quadroCliked.innerHTML = 'O';
             contaClick++;
             if (contaClick > 4) avaliaVencedor();
@@ -122,10 +138,11 @@ function avaliaVencedor() {
             pontosP1++;
             
             return setTimeout(()=> {
+                sound(swordMusic);
                 criarRedLine();
                 setTimeout(()=> {
                     telaFinal();
-                }, 1000);
+                }, 1500);
             }, 500);
             
         }
@@ -135,10 +152,11 @@ function avaliaVencedor() {
             pontosP2++;
             
             return setTimeout(()=> {
+                sound(swordMusic);
                 criarRedLine();
                 setTimeout(()=> {
                     telaFinal();
-                }, 1000);
+                }, 1500);
             }, 500);
         }
 
@@ -249,7 +267,6 @@ function criarRedLine() {
 }
 
 {
-    
     criaTelaInput(jogando());
 }
 
