@@ -10,6 +10,8 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url(../imgs/samuraibg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grande-caixa {
@@ -159,15 +161,6 @@ h1 {
     width: 0%;
     height: min(2vw, 15px);
   }
-}
-.audioPlay {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  margin-top: 0px;
-  margin-left: 0px;
-  z-index: 1000;
 }
 
 /*# sourceMappingURL=style.css.map */
