@@ -8,25 +8,31 @@ body
     width: 100%
     height: 100vh
     display: flex
+    flex-direction: column
     align-items: center
     justify-content: center
     background-image: url(../imgs/samuraibg.jpg)
     background-repeat: no-repeat
     background-size: cover
 
-.grande-caixa
-    display: flex
-    flex-direction: column
-    align-items: center
+    h1
+        color: $font-color1
+        font-size: min(5vw,32px)
 
-.by-enthony
-    color: $font-color1
-    margin-top: 1%
-    font-size: min(4vw, 16px)
 
-h1
-    color: $font-color1
-    font-size: min(5vw,32px)
+    .grande-caixa
+        display: flex
+        flex-direction: column
+        align-items: center
+
+
+    .by-enthony
+        display: block
+        color: $font-color1
+        margin-top: 1%
+        font-size: min(4vw, 16px)
+        margin-top: auto
+
 
 .tela
     display: flex
@@ -44,7 +50,7 @@ h1
     flex-wrap: wrap
     align-items: center
     justify-content: space-evenly
-    box-shadow: 2px 2px 5px 5px  
+    box-shadow: 2px 2px 5px 5px
     .quadro
         width: min(20vw,150px)
         height: min(20vw,150px)

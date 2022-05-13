@@ -7,28 +7,28 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url(../imgs/samuraibg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.grande-caixa {
+body h1 {
+  color: white;
+  font-size: min(5vw, 32px);
+}
+body .grande-caixa {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.by-enthony {
+body .by-enthony {
+  display: block;
   color: white;
   margin-top: 1%;
   font-size: min(4vw, 16px);
-}
-
-h1 {
-  color: white;
-  font-size: min(5vw, 32px);
+  margin-top: auto;
 }
 
 .tela {
