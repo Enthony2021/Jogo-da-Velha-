@@ -14,56 +14,58 @@ body
     background-image: url(../imgs/samuraibg.jpg)
     background-repeat: no-repeat
     background-size: cover
-
     h1
         color: $font-color1
         font-size: min(5vw,32px)
-
 
     .grande-caixa
         display: flex
         flex-direction: column
         align-items: center
-
+        .mensagens
+            width: 80%
+            height: 40px
+            display: flex
+            justify-content: center
+            text-align: center
+            align-items: center
+            font-size: 16px
+            color: $font-color1
+        .tela
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            width: min(70vw, 500px)
+            height: min(70vw, 500px)
+            margin-top: 5px
+            .game-start
+                width: min(70vw, 500px)
+                height: min(70vw, 500px)
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-evenly
+                box-shadow: 2px 2px 5px 5px
+                .quadro
+                    width: min(20vw,150px)
+                    height: min(20vw,150px)
+                    background-color: rgb(255, 217, 0, 0.5)
+                    border-radius: 10px
+                    display: grid
+                    place-items: center
+                    font-size: min(12vw,100px)
+                    box-shadow: 1px 2px 5px 5px
+                    &:hover
+                        background-color: rgb(110, 106, 83, 0.5)
+                        color: white
+                        box-shadow: inherit
 
     .by-enthony
-        display: block
         color: $font-color1
-        margin-top: 1%
+        margin-top: 2%
         font-size: min(4vw, 16px)
-        margin-top: auto
 
-
-.tela
-    display: flex
-    align-items: center
-    justify-content: center
-    position: relative
-    width: min(70vw, 500px)
-    height: min(70vw, 500px)
-    margin-top: 5px
-
-.game-start
-    width: min(70vw, 500px)
-    height: min(70vw, 500px)
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    justify-content: space-evenly
-    box-shadow: 2px 2px 5px 5px
-    .quadro
-        width: min(20vw,150px)
-        height: min(20vw,150px)
-        background-color: rgb(255, 217, 0, 0.5)
-        border-radius: 10px
-        display: grid
-        place-items: center
-        font-size: min(12vw,100px)
-        box-shadow: 1px 2px 5px 5px
-        &:hover
-            background-color: rgb(110, 106, 83, 0.5)
-            color: white
-            box-shadow: inherit
 
 .tela-input
     position: absolute
@@ -119,16 +121,6 @@ body
         font-size: min(5vw, 40px)
         border-radius: 10px
         box-shadow: 0px 0px 10px 2px black
-
-.mensagens
-    width: 80%
-    height: 40px
-    display: flex
-    justify-content: center
-    text-align: center
-    align-items: center
-    font-size: 16px
-    color: $font-color1
 
 .red-line
     position: absolute

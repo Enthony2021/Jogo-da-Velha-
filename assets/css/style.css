@@ -23,15 +23,17 @@ body .grande-caixa {
   flex-direction: column;
   align-items: center;
 }
-body .by-enthony {
-  display: block;
+body .grande-caixa .mensagens {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
   color: white;
-  margin-top: 1%;
-  font-size: min(4vw, 16px);
-  margin-top: auto;
 }
-
-.tela {
+body .grande-caixa .tela {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,8 +42,7 @@ body .by-enthony {
   height: min(70vw, 500px);
   margin-top: 5px;
 }
-
-.game-start {
+body .grande-caixa .tela .game-start {
   width: min(70vw, 500px);
   height: min(70vw, 500px);
   display: flex;
@@ -50,7 +51,7 @@ body .by-enthony {
   justify-content: space-evenly;
   box-shadow: 2px 2px 5px 5px;
 }
-.game-start .quadro {
+body .grande-caixa .tela .game-start .quadro {
   width: min(20vw, 150px);
   height: min(20vw, 150px);
   background-color: rgba(255, 217, 0, 0.5);
@@ -60,10 +61,15 @@ body .by-enthony {
   font-size: min(12vw, 100px);
   box-shadow: 1px 2px 5px 5px;
 }
-.game-start .quadro:hover {
+body .grande-caixa .tela .game-start .quadro:hover {
   background-color: rgba(110, 106, 83, 0.5);
   color: white;
   box-shadow: inherit;
+}
+body .by-enthony {
+  color: white;
+  margin-top: 2%;
+  font-size: min(4vw, 16px);
 }
 
 .tela-input {
@@ -122,17 +128,6 @@ body .by-enthony {
   font-size: min(5vw, 40px);
   border-radius: 10px;
   box-shadow: 0px 0px 10px 2px black;
-}
-
-.mensagens {
-  width: 80%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-size: 16px;
-  color: white;
 }
 
 .red-line {
