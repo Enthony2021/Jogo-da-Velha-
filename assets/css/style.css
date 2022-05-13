@@ -76,7 +76,7 @@ body .by-enthony {
   position: absolute;
   width: min(66vw, 478px);
   height: min(67vw, 485px);
-  background: linear-gradient(rgb(255, 217, 1), rgba(255, 255, 255, 0.5));
+  background-color: rgba(255, 217, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,6 @@ body .by-enthony {
   font-weight: bold;
   background: linear-gradient(rgba(163, 163, 163, 0.5019607843), rgba(255, 255, 255, 0.5));
   font-size: min(5vw, 40px);
-  border-radius: 10px;
   box-shadow: 0px 0px 10px 2px black;
 }
 

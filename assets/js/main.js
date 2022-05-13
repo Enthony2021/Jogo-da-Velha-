@@ -54,7 +54,7 @@ function criaTelaInput(cb) {
 
     telaInput.appendChild(buttonIniciar);
     buttonIniciar.classList.add('button-iniciar');
-    buttonIniciar.innerHTML = '&#9654';
+    buttonIniciar.innerHTML = '➤';
 
     inputOne.addEventListener('focus', function() {
         inputOne.addEventListener('keypress', e => {
