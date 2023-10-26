@@ -4,7 +4,10 @@
   "description": "",
   "main": "./assts/js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:sass": "sass --watch assets/sass/styles.sass:assets/css/style.css",
+    "dev:tsc": "tsc --watch",
+    "dev:webpack": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,19 @@
   },
   "homepage": "https://github.com/Enthony2021/Jogo-da-Velha-#readme",
   "devDependencies": {
-    "sass": "^1.51.0"
+    "@types/node": "^20.8.8",
+    "sass": "^1.51.0",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "core-js": "^3.22.4",
+    "css-loader": "^6.7.1",
+    "regenerator-runtime": "^0.13.9",
+    "style-loader": "^3.3.1"
   }
 }
